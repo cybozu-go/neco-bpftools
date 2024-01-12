@@ -24,3 +24,7 @@ go.work
 ### Custom
 .idea
 *.o
+bin/
+**/vmlinux.h
+**/*bpfeb.go
+**/*bpfel.go
