@@ -29,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/cybozu-go/neco-bpftools:${{ steps.set-tag.output.RELEASE_TAG }}
+          tags: ghcr.io/cybozu-go/neco-bpftools:${{ steps.set-tag.outputs.RELEASE_TAG }}
   release:
     name: Release on GitHub
     needs: image
